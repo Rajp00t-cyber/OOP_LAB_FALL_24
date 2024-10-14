@@ -1,0 +1,69 @@
+package unilab;
+class Device
+{
+ private String brand;
+ private String model;
+ private int batteryLife;
+ public Device(String brand, String model, int batteryLife) {
+ this.brand = brand;
+ this.model = model;
+ this.batteryLife = batteryLife;
+ }
+ //setter
+ public void setBrand(String brand) {
+ this.brand = brand;
+ }
+ public void setModel(String model) {
+ this.model = model;
+ }
+ public void setBatteryLife(int batteryLife) {
+ this.batteryLife = batteryLife;
+ }
+
+ //getter
+ public String getBrand() {
+ return brand;
+ }
+ public String getModel() {
+ return model;
+ }
+ public int getBatteryLife() {
+ return batteryLife;
+ }
+}
+class Smartphone extends Device{
+
+ int cameraResolution;
+ public Smartphone(String brand, String model, int batteryLife,int cameraResolution) {
+ super(brand, model, batteryLife);
+ }
+ //setter
+ public void setCameraResolution(int cameraResolution) {
+ this.cameraResolution = cameraResolution;
+ }
+ //getter
+ public int getCameraResolution() {
+ return cameraResolution;
+ }
+}
+
+public class Encapsulation {
+ public static void main(String[] args)
+ {
+ //Constructor Method call used here
+ Smartphone s=new Smartphone("Infinix","ABC",24,150);
+
+ //setter call used here
+
+ s.setCameraResolution(150);
+ s.setBrand("Infinix");
+ s.setModel("ABC");
+ s.setBatteryLife(24);
+
+ //cout
+ System.out.println("Brand is " +s.getBrand());
+ System.out.println("Modal is " +s.getModel());
+ System.out.println("Camera Resolution is " + s.getCameraResolution());
+ System.out.println("Battery life is "+s.getBatteryLife());
+ }
+}
