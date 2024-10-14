@@ -1,0 +1,12 @@
+package unilab;
+public class arr {
+    
+    public static void main(String[] args) {
+    String[] shops={"Ice cream", "BoookShop","Hardware" , "Games", "Meatshop"};
+    int i;
+    for(i=0;i<6;i++)
+    {
+        System.out.println(shops[i]);
+    }
+    }
+}
