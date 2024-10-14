@@ -1,0 +1,24 @@
+package unilab;
+class Computer
+{
+ String name;
+ String config;
+ double cost;
+ String os;
+}
+public class Task3 {
+ public static void main(String[] args)
+ {
+ Computer c = new Computer();
+ c.name = "Apple";
+ c.config ="i5";
+ c.cost =50000;
+ c.os ="IOS";
+
+ System.out.println("The company name is "+c.name);
+ System.out.println("The configuration is "+c.config);
+ System.out.println("The cost is "+c.cost);
+ System.out.println("The Operating System is "+c.os);
+
+ }
+}
