@@ -1,0 +1,41 @@
+package unilab; 
+  
+class Room { 
+    String roomType; 
+    double size; 
+  
+    Room(String roomType, double size) { 
+        this.roomType = roomType; 
+        this.size = size; 
+    } 
+} 
+  
+class House { 
+    String address; 
+    Room livingRoom; 
+    Room kitchen; 
+  
+    House(String address, Room livingRoom, Room kitchen) { 
+        this.address = address; 
+        this.livingRoom = livingRoom; 
+        this.kitchen = kitchen; 
+    } 
+  
+    void displayRooms() { 
+        System.out.println("House Address: "+address); 
+        System.out.println("Living Room: "+livingRoom.roomType+", Size: "+livingRoom.size); 
+        System.out.println("Kitchen: " +kitchen.roomType+", Size: "+kitchen.size); 
+    } 
+} 
+  
+public class Task02 { 
+    public static void main(String[] args) { 
+         
+        Room livingRoom=new Room("Living Room", 620); 
+         
+        Room kitchen=new Room("Kitchen", 520); 
+        //adress 
+        House house=new House("123 Street Islamabad",livingRoom,kitchen); 
+        house.displayRooms(); 
+    } 
+} 
