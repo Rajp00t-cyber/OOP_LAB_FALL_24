@@ -1,0 +1,25 @@
+package unilab;
+ 
+ 
+public class uni {
+    public static void main(String[] args)
+    {
+        
+        //I entered zero 0 as "a" ki value.
+        
+    int a=0;    
+    
+    if(a>0)
+    {
+      System.out.println("You Entered a Positive Number");  
+    }
+    else if(a<0)
+    {
+      System.out.println("You Entered a negative Number");      
+    }
+    else 
+    {
+        System.out.println("You Entered Zero");
+    }
+    }
+}
