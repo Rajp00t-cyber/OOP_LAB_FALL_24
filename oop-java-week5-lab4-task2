@@ -1,0 +1,29 @@
+package unilab; 
+import java.util.Scanner; 
+class Car 
+{ 
+{ 
+} 
+int model; 
+//parameter 
+Car(int Model) 
+model=Model; 
+void display() 
+{ 
+} 
+System.out.println("My car's Model is = "+model); 
+  
+} 
+public class motor { 
+    public static void main(String[] args) 
+    { 
+         
+        Scanner s=new Scanner(System.in); 
+        System.out.println("Enter the Model Of your Car"); 
+        int model=s.nextInt(); 
+         
+        Car c=new Car(model); 
+        c.display(); 
+                 
+  }    
+} 
