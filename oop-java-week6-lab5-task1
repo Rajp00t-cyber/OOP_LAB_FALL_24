@@ -1,0 +1,49 @@
+ 
+package unilab; 
+class Book{ 
+    String  title; 
+    String  author; 
+     
+    //constructor 
+  
+    public Book(String title, String author) { 
+        this.title = title; 
+        this.author = author; 
+    } 
+        // Display 
+        public void display(){ 
+            System.out.println("Title:"+title); 
+            System.out.println("Author:"+author); 
+        } 
+    } 
+     
+class Library{ 
+    Book b; 
+    Book b1; 
+     
+    // constructor 
+  
+    public Library(Book b1, Book b2) { 
+        this.b = b; 
+        this.b1 = b1; 
+    } 
+    // Display ka function 
+     public void book(){ 
+        System.out.println("\nBooks are available:\n"); 
+    }   
+} 
+  
+public class Task01 { 
+   public static void main(String[] args) { 
+       
+      Book b1=new Book("Parrots","Rida"); 
+      Book b2=new Book("Nature","Rajpoot"); 
+       
+      Library l=new Library (b1,b2); 
+      l.book(); 
+       
+     
+      b1.display(); 
+b2.display(); 
+} 
+}
